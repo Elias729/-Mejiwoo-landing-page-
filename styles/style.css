@@ -105,16 +105,18 @@
 }
 
 
-/** collections Section Container **/
+/** collections & Seller Section Style **/
 
 
-.collections-container {
+.collections-container,
+.Seller-container {
     width: 80%;
     margin: auto;
     padding: 60px 0;
 }
 
-.collections-title {
+.collections-title,
+.Seller-title {
     text-align: center;
     margin-bottom: 50px;
     font-size: 40px;
@@ -168,4 +170,16 @@
 
 .product-btn:hover {
     background-color: #ffcc00;
+}
+
+
+.seller-title {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.seller-price {
+    font-size: 18px;
+    color: #555;
 }
