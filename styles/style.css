@@ -1,3 +1,49 @@
 * {
     font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+}
+
+.logo-section {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.menu-section ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-section ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-section ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #111;
+    transition: width 0.3s;
+}
+
+.menu-section ul li a:hover::after {
+    width: 100%;
 }
