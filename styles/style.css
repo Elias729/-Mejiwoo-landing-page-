@@ -5,11 +5,18 @@
     box-sizing: border-box;
 }
 
+/** Header Section Style **/
+
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 0;
+    width: 80%;
+    margin: auto;
 
 }
 
@@ -29,7 +36,7 @@
     text-decoration: none;
     color: black;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     position: relative;
 }
 
@@ -46,4 +53,48 @@
 
 .menu-section ul li a:hover::after {
     width: 100%;
+}
+
+/** Banner Section Style **/
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0px;
+    background-color: #f7f6f0;
+    width: 80%;
+    margin: auto;
+}
+
+.left-container,
+.right-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.middle-container {
+    text-align: center;
+    max-width: 400px;
+}
+
+.middle-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.middle-container hr {
+    width: 200px;
+    margin: 10px auto;
+    border: 2px solid #111;
+}
+
+.middle-container p {
+    font-size: 18px;
+    color: #555;
+    width: 280px;
+    line-height: 24px;
 }
